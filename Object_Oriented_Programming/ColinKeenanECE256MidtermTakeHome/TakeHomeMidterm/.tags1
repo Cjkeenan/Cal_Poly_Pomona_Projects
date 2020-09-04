@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+TakeHomeMidterm	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^namespace TakeHomeMidterm$/;"	namespace	line:3
+ComplexPolynomial	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^    public class ComplexPolynomial$/;"	class	line:5	namespace:TakeHomeMidterm
+coefficients	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        private Complex[] coefficients;$/;"	field	line:7	class:TakeHomeMidterm.ComplexPolynomial	file:
+degree	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        private int degree;$/;"	field	line:8	class:TakeHomeMidterm.ComplexPolynomial	file:
+SetPolynomial	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public void SetPolynomial(Complex[] coef, int deg)$/;"	method	line:9	class:TakeHomeMidterm.ComplexPolynomial	signature:(Complex[] coef, int deg)
+CalculateAddition	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public ComplexPolynomial CalculateAddition(ComplexPolynomial p1)$/;"	method	line:14	class:TakeHomeMidterm.ComplexPolynomial	signature:(ComplexPolynomial p1)
+CalculateSubtraction	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public ComplexPolynomial CalculateSubtraction(ComplexPolynomial p1) {$/;"	method	line:45	class:TakeHomeMidterm.ComplexPolynomial	signature:(ComplexPolynomial p1)
+CalculateProduct	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public ComplexPolynomial CalculateProduct(ComplexPolynomial p1)$/;"	method	line:54	class:TakeHomeMidterm.ComplexPolynomial	signature:(ComplexPolynomial p1)
+CalculateQuotient	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public ComplexPolynomial CalculateQuotient(ComplexPolynomial p1)$/;"	method	line:75	class:TakeHomeMidterm.ComplexPolynomial	signature:(ComplexPolynomial p1)
+CalculateRemainder	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public ComplexPolynomial CalculateRemainder(ComplexPolynomial p1)$/;"	method	line:109	class:TakeHomeMidterm.ComplexPolynomial	signature:(ComplexPolynomial p1)
+CalculateComplexRoot	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public Complex[] CalculateComplexRoot()$/;"	method	line:129	class:TakeHomeMidterm.ComplexPolynomial	signature:()
+Print	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public void Print()$/;"	method	line:149	class:TakeHomeMidterm.ComplexPolynomial	signature:()
+Problem_4	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^    class Problem_4$/;"	class	line:170	namespace:TakeHomeMidterm
+Run	C:\Users\Ryan\source\repos\TakeHomeMidterm\TakeHomeMidterm\Problem 4.cs	/^        public void Run()$/;"	method	line:172	class:TakeHomeMidterm.Problem_4	signature:()

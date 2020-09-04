@@ -1,0 +1,359 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 28 13:45:59 2018
+# Process ID: 15384
+# Current directory: F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.runs/synth_1
+# Command line: vivado.exe -log Song_Player.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Song_Player.tcl
+# Log file: F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.runs/synth_1/Song_Player.vds
+# Journal file: F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Song_Player.tcl -notrace
+Command: synth_design -top Song_Player -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16824 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.875 ; gain = 100.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Song_Player' [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/Song_Player.v:23]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+	Parameter tempo bound to: 120 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheet_StarWars' [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/MusicSheet_StarWars.v:23]
+	Parameter QUARTER bound to: 4 - type: integer 
+	Parameter EIGHTH bound to: 2 - type: integer 
+	Parameter SIXTEENTH bound to: 1 - type: integer 
+	Parameter HALF bound to: 8 - type: integer 
+	Parameter ONE bound to: 16 - type: integer 
+	Parameter D4 bound to: 170303.688900 - type: float 
+	Parameter Ds4 bound to: 160739.678000 - type: float 
+	Parameter Ee4 bound to: 160739.678000 - type: float 
+	Parameter E4 bound to: 151712.768300 - type: float 
+	Parameter F4 bound to: 143192.796900 - type: float 
+	Parameter Fs4 bound to: 135151.294900 - type: float 
+	Parameter Gg4 bound to: 135151.294900 - type: float 
+	Parameter G4 bound to: 127561.392000 - type: float 
+	Parameter Gs4 bound to: 120397.727300 - type: float 
+	Parameter Aa4 bound to: 120397.727300 - type: float 
+	Parameter A4 bound to: 113636.363600 - type: float 
+	Parameter As4 bound to: 107254.708500 - type: float 
+	Parameter Bb4 bound to: 107254.708500 - type: float 
+	Parameter B5 bound to: 101231.437900 - type: float 
+	Parameter C5 bound to: 95546.425600 - type: float 
+	Parameter Cs5 bound to: 90180.675410 - type: float 
+	Parameter Dd5 bound to: 90180.675410 - type: float 
+	Parameter D5 bound to: 85116.258060 - type: float 
+	Parameter Ds5 bound to: 80336.251120 - type: float 
+	Parameter Ee5 bound to: 80336.251120 - type: float 
+	Parameter E5 bound to: 75824.682510 - type: float 
+	Parameter F5 bound to: 71566.477120 - type: float 
+	Parameter Fs5 bound to: 67547.406440 - type: float 
+	Parameter Gg5 bound to: 67547.406440 - type: float 
+	Parameter G5 bound to: 63754.041000 - type: float 
+	Parameter Gs5 bound to: 60173.705520 - type: float 
+	Parameter SP bound to: 1 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001011011 is unreachable [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/MusicSheet_StarWars.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheet_StarWars' (1#1) [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/MusicSheet_StarWars.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Song_Player' (2#1) [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/Song_Player.v:23]
+WARNING: [Synth 8-3917] design Song_Player has port aud_sd driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.422 ; gain = 154.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.422 ; gain = 154.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.422 ; gain = 154.730
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/constrs_1/imports/Vivado_Workspace/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/constrs_1/imports/Vivado_Workspace/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/constrs_1/imports/Vivado_Workspace/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Song_Player_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Song_Player_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 742.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 742.789 ; gain = 486.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 742.789 ; gain = 486.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 742.789 ; gain = 486.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/Song_Player.v:73]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 742.789 ; gain = 486.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Song_Player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element number_reg_rep was removed.  [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/Song_Player.v:41]
+WARNING: [Synth 8-6014] Unused sequential element number_reg_rep was removed.  [F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.srcs/sources_1/new/Song_Player.v:41]
+DSP Report: Generating DSP time12, operation Mode is: (A:0x17840)*B.
+DSP Report: operator time12 is absorbed into DSP time12.
+DSP Report: operator time12 is absorbed into DSP time12.
+WARNING: [Synth 8-3917] design Song_Player has port aud_sd driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 742.789 ; gain = 486.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+----------------+---------------+----------------+
+|Module Name         | RTL Object     | Depth x Width | Implemented As | 
++--------------------+----------------+---------------+----------------+
+|MusicSheet_StarWars | note           | 1024x18       | LUT            | 
+|MusicSheet_StarWars | duration       | 1024x4        | LUT            | 
+|Song_Player         | number_reg_rep | 1024x4        | Block RAM      | 
+|Song_Player         | number_reg_rep | 1024x18       | Block RAM      | 
++--------------------+----------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Song_Player | (A:0x17840)*B | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance time120/number_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance counter00/number_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 795.352 ; gain = 538.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 795.500 ; gain = 538.809
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance number_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance number_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    27|
+|3     |DSP48E1    |     1|
+|4     |LUT1       |     3|
+|5     |LUT2       |    20|
+|6     |LUT3       |    15|
+|7     |LUT4       |    58|
+|8     |LUT5       |     9|
+|9     |LUT6       |    13|
+|10    |RAMB18E1   |     1|
+|11    |RAMB18E1_1 |     1|
+|12    |FDRE       |    63|
+|13    |IBUF       |     3|
+|14    |OBUF       |     2|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   217|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 815.375 ; gain = 227.316
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.375 ; gain = 558.684
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.375 ; gain = 570.898
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/OneDrive/Vivado_Workspace/ECE_3300L/week_7/week_7.runs/synth_1/Song_Player.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Song_Player_utilization_synth.rpt -pb Song_Player_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 815.375 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 28 13:46:41 2018...

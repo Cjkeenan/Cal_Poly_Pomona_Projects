@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Sep 20 14:21:02 2018
+# Process ID: 23392
+# Current directory: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/week_4/week_4.runs/synth_1
+# Command line: vivado.exe -log sign_mag_add_implement.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sign_mag_add_implement.tcl
+# Log file: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/week_4/week_4.runs/synth_1/sign_mag_add_implement.vds
+# Journal file: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/week_4/week_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sign_mag_add_implement.tcl -notrace

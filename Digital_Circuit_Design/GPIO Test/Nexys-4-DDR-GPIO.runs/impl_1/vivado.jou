@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 18 16:13:51 2018
+# Process ID: 15892
+# Current directory: D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-GPIO/proj/Nexys-4-DDR-GPIO.runs/impl_1
+# Command line: vivado.exe -log GPIO_demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source GPIO_demo.tcl -notrace
+# Log file: D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-GPIO/proj/Nexys-4-DDR-GPIO.runs/impl_1/GPIO_demo.vdi
+# Journal file: D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-GPIO/proj/Nexys-4-DDR-GPIO.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source GPIO_demo.tcl -notrace

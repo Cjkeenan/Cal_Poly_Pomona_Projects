@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 29 15:14:09 2018
+# Process ID: 18420
+# Current directory: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.runs/synth_1
+# Command line: vivado.exe -log microphone_suite.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microphone_suite.tcl
+# Log file: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.runs/synth_1/microphone_suite.vds
+# Journal file: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source microphone_suite.tcl -notrace
+Command: synth_design -top microphone_suite -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14968 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 335.066 ; gain = 99.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'microphone_suite' [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/new/microphone_suite.v:23]
+	Parameter clap_sampling_freq bound to: 1000000 - type: integer 
+	Parameter voice_sampling_freq bound to: 2000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clock_divider.v:23]
+	Parameter intended_freq bound to: 1000000 - type: integer 
+	Parameter system_freq bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clock_divider.v:23]
+	Parameter intended_freq bound to: 2000000 - type: integer 
+	Parameter system_freq bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clock_divider.v:23]
+WARNING: [Synth 8-567] referenced signal 'voice_clock' should be on the sensitivity list [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/new/microphone_suite.v:52]
+WARNING: [Synth 8-567] referenced signal 'clap_clock' should be on the sensitivity list [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/new/microphone_suite.v:52]
+INFO: [Synth 8-6157] synthesizing module 'voice_changer' [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/new/voice_changer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'voice_changer' (2#1) [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/new/voice_changer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clap_detector' [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clap_detection.v:23]
+	Parameter sampling_freq bound to: 1000000 - type: integer 
+	Parameter DELAY_BETWEEN bound to: 62500 - type: integer 
+	Parameter DELAY_2SEC bound to: 1000000 - type: integer 
+	Parameter WAIT_CLAP1 bound to: 3'b000 
+	Parameter DELAY_CLAP2 bound to: 3'b001 
+	Parameter WAIT_CLAP2 bound to: 3'b010 
+	Parameter TOGGLE_STATE bound to: 3'b011 
+	Parameter DELAY_RESET bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clap_detection.v:77]
+WARNING: [Synth 8-6014] Unused sequential element state_after_reg was removed.  [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clap_detection.v:54]
+WARNING: [Synth 8-6014] Unused sequential element state_after_d_reg was removed.  [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clap_detection.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'clap_detector' (3#1) [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clap_detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'microphone_suite' (4#1) [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/new/microphone_suite.v:23]
+WARNING: [Synth 8-3331] design microphone_suite has unconnected port channel_select
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 390.203 ; gain = 154.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 390.203 ; gain = 154.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 390.203 ; gain = 154.781
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/constrs_1/imports/Vivado_Workspace/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/constrs_1/imports/Vivado_Workspace/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/constrs_1/imports/Vivado_Workspace/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microphone_suite_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microphone_suite_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 728.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "new_clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clap_detector'
+WARNING: [Synth 8-6014] Unused sequential element state_d_reg was removed.  [C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.srcs/sources_1/imports/new/clap_detection.v:72]
+INFO: [Synth 8-5545] ROM "delay_d" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_d" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_d" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_d" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_d" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              WAIT_CLAP1 |                              000 |                              000
+             DELAY_CLAP2 |                              001 |                              001
+              WAIT_CLAP2 |                              010 |                              010
+            TOGGLE_STATE |                              011 |                              011
+             DELAY_RESET |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clap_detector'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     27 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module microphone_suite 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module voice_changer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clap_detector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input     32 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "clk_gen_clap/new_clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_gen_voice/new_clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CD1/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CD1/delay_d" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_gen_clap/new_clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_gen_voice/new_clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design microphone_suite has unconnected port channel_select
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 728.234 ; gain = 492.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    34|
+|3     |LUT1   |    33|
+|4     |LUT2   |    52|
+|5     |LUT3   |    28|
+|6     |LUT4   |    47|
+|7     |LUT5   |    31|
+|8     |LUT6   |    42|
+|9     |FDCE   |    34|
+|10    |FDC_1  |     3|
+|11    |FDRE   |   124|
+|12    |IBUF   |     4|
+|13    |OBUF   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+------------------------------+------+
+|      |Instance        |Module                        |Cells |
++------+----------------+------------------------------+------+
+|1     |top             |                              |   439|
+|2     |  CD1           |clap_detector                 |   285|
+|3     |  VC1           |voice_changer                 |     1|
+|4     |  clk_gen_clap  |clock_divider                 |    71|
+|5     |  clk_gen_voice |clock_divider__parameterized0 |    70|
++------+----------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 750.805 ; gain = 177.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 750.805 ; gain = 515.383
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FDC_1 => FDCE (inverted pins: C): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 750.805 ; gain = 528.523
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/Final_Project_Microphone_Suite/Final_Project_Microphone_Suite.runs/synth_1/microphone_suite.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file microphone_suite_utilization_synth.rpt -pb microphone_suite_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 750.805 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 29 15:15:10 2018...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Sep 18 15:00:33 2018
+# Process ID: 15828
+# Current directory: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/week_3/week_3.runs/impl_1
+# Command line: vivado.exe -log up_counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source up_counter.tcl -notrace
+# Log file: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/week_3/week_3.runs/impl_1/up_counter.vdi
+# Journal file: C:/Users/Colin Keenan/OneDrive/Vivado_Workspace/ECE_3300L/week_3/week_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source up_counter.tcl -notrace

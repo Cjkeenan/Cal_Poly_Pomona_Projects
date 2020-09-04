@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Fri Sep 13 18:14:37 2019
+# Process ID: 20368
+# Current directory: F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/clk_wiz_6_synth_1
+# Command line: vivado.exe -log clk_wiz_6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_6.tcl
+# Log file: F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/clk_wiz_6_synth_1/clk_wiz_6.vds
+# Journal file: F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/clk_wiz_6_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_6.tcl -notrace

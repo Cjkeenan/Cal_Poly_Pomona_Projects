@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Fri Sep 13 20:42:03 2019
+# Process ID: 19224
+# Current directory: F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/impl_1
+# Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/impl_1/main.vdi
+# Journal file: F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: open_checkpoint main_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 291.617 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'base_wizard/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_group1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_group2/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_group3/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1237.711 ; gain = 9.266
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1237.711 ; gain = 9.266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1237.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1.1 (64-bit) build 2580384
+open_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1237.711 ; gain = 946.094
+Command: write_bitstream -force main.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-153] Gated clock check: Net clock_spikestrip1/current_clock is a gated clock net sourced by a combinational pin clock_spikestrip1/counter[0]_i_2__0/O, cell clock_spikestrip1/counter[0]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-157] Slice clock routing: For SLICE_X0Y100: more than 2 non-clock pins of the SLICE are driven by different global clocks. This condition should be corrected as it easily becomes congested and will fail to route.
+WARNING: [DRC PDRC-157] Slice clock routing: For SLICE_X0Y101: more than 2 non-clock pins of the SLICE are driven by different global clocks. This condition should be corrected as it easily becomes congested and will fail to route.
+WARNING: [DRC PDRC-157] Slice clock routing: For SLICE_X0Y97: more than 2 non-clock pins of the SLICE are driven by different global clocks. This condition should be corrected as it easily becomes congested and will fail to route.
+WARNING: [DRC PDRC-157] Slice clock routing: For SLICE_X0Y98: more than 2 non-clock pins of the SLICE are driven by different global clocks. This condition should be corrected as it easily becomes congested and will fail to route.
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT clock_spikestrip1/counter[0]_i_2__0 is driving clock pin of 28 cells. This could lead to large hold time violations. Involved cells are:
+clock_spikestrip1/counter_reg[0], clock_spikestrip1/counter_reg[10], clock_spikestrip1/counter_reg[11], clock_spikestrip1/counter_reg[12], clock_spikestrip1/counter_reg[13], clock_spikestrip1/counter_reg[14], clock_spikestrip1/counter_reg[15], clock_spikestrip1/counter_reg[16], clock_spikestrip1/counter_reg[17], clock_spikestrip1/counter_reg[18], clock_spikestrip1/counter_reg[19], clock_spikestrip1/counter_reg[1], clock_spikestrip1/counter_reg[20], clock_spikestrip1/counter_reg[21], clock_spikestrip1/counter_reg[22]... and (the first 15 of 28 listed)
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 7 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./main.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'F:/OneDrive/Vivado_Workspace/ECE_4300/up_down_counter_introduction/up_down_counter_introduction.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Sep 13 20:42:49 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1721.410 ; gain = 483.699
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 13 20:42:49 2019...

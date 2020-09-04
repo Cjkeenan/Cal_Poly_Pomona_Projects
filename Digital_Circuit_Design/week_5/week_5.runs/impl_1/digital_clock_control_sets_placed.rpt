@@ -1,0 +1,136 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Oct  7 00:38:52 2018
+| Host         : ColinKeenan-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file digital_clock_control_sets_placed.rpt
+| Design       : digital_clock
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    69 |
+| Unused register locations in slices containing registers |   380 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           50 |
+|      4 |           13 |
+|     12 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              78 |           12 |
+| No           | No                    | Yes                    |             100 |           50 |
+| No           | Yes                   | No                     |             216 |           35 |
+| Yes          | No                    | No                     |              26 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+-------------------------------+---------------------------------+------------------+----------------+
+|                   Clock Signal                  |         Enable Signal         |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------------------------------------+-------------------------------+---------------------------------+------------------+----------------+
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[0]_P_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[5]_P_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | reset_IBUF                      |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[3]_P_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[0]_C_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | reset_IBUF                      |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[3]_P_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[0]_C_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[5]_P_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[1]_C_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[1]_P_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[2]_C_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[2]_P_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[3]_C_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[4]_P_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[4]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[0]_P_0 |                1 |              2 |
+|  CLK2/carry_reg                                 |                               | second_counter/count_reg[5]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[1]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[1]_P_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[2]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[2]_P_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[3]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[4]_P_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[4]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[5]_P_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[0]_C_0 |                1 |              2 |
+|  CLK_fast/clock                                 |                               | second_counter/count_reg[5]_C_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[4]_C_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[1]_C_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[2]_P_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[1]_P_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[5]_C_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[2]_C_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[4]_C_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[0]_P_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[3]_P_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[3]_C_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[4]_P_0 |                1 |              2 |
+|  second_counter/count_reg[5]_C_1                |                               | minute_counter/count_reg[5]_P_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[1]_C_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[2]_P_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[1]_P_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[5]_C_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[2]_C_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[0]_C_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[0]_P_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[3]_P_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[3]_C_0 |                1 |              2 |
+|  second_counter_faster/carry                    |                               | minute_counter/count_reg[4]_P_0 |                1 |              2 |
+|  CLK1/CLK                                       |                               |                                 |                1 |              4 |
+|  minute_counter/count_reg[2]_P_0                |                               | minute_counter/count_reg[2]_C_0 |                1 |              4 |
+|  minute_counter/count_reg[1]_P_0                |                               | minute_counter/count_reg[1]_C_0 |                1 |              4 |
+|  minute_counter/count_reg[0]_P_0                |                               | minute_counter/count_reg[0]_C_0 |                2 |              4 |
+|  minute_counter/count_reg[3]_P_0                |                               | minute_counter/count_reg[3]_C_0 |                1 |              4 |
+|  minute_counter/count_reg[4]_P_0                |                               | minute_counter/count_reg[4]_C_0 |                2 |              4 |
+|  minute_counter/count_reg[5]_P_0                |                               | minute_counter/count_reg[5]_C_0 |                1 |              4 |
+|  second_counter/count_reg[3]_P_0                |                               | second_counter/count_reg[3]_C_0 |                2 |              4 |
+|  second_counter/count_reg[0]_P_0                |                               | second_counter/count_reg[0]_C_0 |                1 |              4 |
+|  second_counter/count_reg[2]_P_0                |                               | second_counter/count_reg[2]_C_0 |                2 |              4 |
+|  second_counter/count_reg[1]_P_0                |                               | second_counter/count_reg[1]_C_0 |                1 |              4 |
+|  second_counter/count_reg[4]_P_0                |                               | second_counter/count_reg[4]_C_0 |                1 |              4 |
+|  second_counter/count_reg[5]_P_0                |                               | second_counter/count_reg[5]_C_0 |                1 |              4 |
+|  decoder_minutes/tens_display_reg[6]_i_2__0_n_0 |                               |                                 |                2 |             12 |
+|  decoder_seconds/tens_display_reg[6]_i_2_n_0    |                               |                                 |                2 |             12 |
+|  sys_clock_IBUF_BUFG                            | CLK_fast/new_freq[12]_i_1_n_0 |                                 |                3 |             26 |
+|  sys_clock_IBUF_BUFG                            |                               |                                 |                7 |             50 |
+|  sys_clock_IBUF_BUFG                            |                               | CLK_fast/count[0]_i_1_n_0       |                7 |             54 |
+|  sys_clock_IBUF_BUFG                            |                               | reset_IBUF                      |               12 |            114 |
++-------------------------------------------------+-------------------------------+---------------------------------+------------------+----------------+
+
+

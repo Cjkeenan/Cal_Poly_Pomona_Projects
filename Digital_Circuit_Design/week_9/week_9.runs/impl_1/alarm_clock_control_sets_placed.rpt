@@ -1,0 +1,111 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Nov  1 13:23:28 2018
+| Host         : ColinKeenan-Laptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file alarm_clock_control_sets_placed.rpt
+| Design       : alarm_clock
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |   232 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           37 |
+|      4 |            1 |
+|      6 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            3 |
+| No           | No                    | Yes                    |              50 |           25 |
+| No           | Yes                   | No                     |             240 |           37 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              24 |            6 |
+| Yes          | Yes                   | No                     |              20 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+-----------------------+------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |     Enable Signal     |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------------------+-----------------------+------------------------------------------------+------------------+----------------+
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[0]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/clock_1hz/SR[0]                            |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[0]_LDC_i_1__0_n_0 |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[2]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[3]_LDC_i_1__0_n_0 |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[4]_LDC_i_1__0_n_0 |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[1]_LDC_i_1__0_n_0 |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[1]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[2]_LDC_i_1__0_n_0 |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[5]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/second_counter/count_reg[5]_LDC_i_1__0_n_0 |                       | DC1/second_counter/count_reg[5]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[4]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[5]_LDC_i_1__0_n_0 |                1 |              2 |
+|  DC1/clock_1hz/carry_reg                        |                       | DC1/second_counter/count_reg[3]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/minute_counter/count_reg[0]_LDC_i_1_n_0    |                       | DC1/minute_counter/count_reg[0]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/minute_counter/count_reg[1]_LDC_i_1_n_0    |                       | DC1/minute_counter/count_reg[1]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/minute_counter/count_reg[2]_LDC_i_1_n_0    |                       | DC1/minute_counter/count_reg[2]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/minute_counter/count_reg[3]_LDC_i_1_n_0    |                       | DC1/minute_counter/count_reg[3]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/minute_counter/count_reg[4]_LDC_i_1_n_0    |                       | DC1/minute_counter/count_reg[4]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/minute_counter/count_reg[5]_LDC_i_1_n_0    |                       | DC1/minute_counter/count_reg[5]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/count_reg[0]_LDC_i_1__0_n_0 |                       | DC1/second_counter/count_reg[0]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/second_counter/count_reg[3]_LDC_i_1__0_n_0 |                       | DC1/second_counter/count_reg[3]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[0]_LDC_i_1_n_0    |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[2]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[0]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[1]_LDC_i_1_n_0    |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[2]_LDC_i_1_n_0    |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[3]_LDC_i_1_n_0    |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[3]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[1]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[4]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[5]_LDC_i_2__0_n_0 |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[4]_LDC_i_1_n_0    |                1 |              2 |
+|  DC1/second_counter/carry                       |                       | DC1/minute_counter/count_reg[5]_LDC_i_1_n_0    |                1 |              2 |
+|  DC1/second_counter/count_reg[1]_LDC_i_1__0_n_0 |                       | DC1/second_counter/count_reg[1]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/second_counter/count_reg[2]_LDC_i_1__0_n_0 |                       | DC1/second_counter/count_reg[2]_LDC_i_2_n_0    |                1 |              2 |
+|  DC1/second_counter/count_reg[4]_LDC_i_1__0_n_0 |                       | DC1/second_counter/count_reg[4]_LDC_i_2_n_0    |                1 |              2 |
+|  sys_clock_IBUF_BUFG                            |                       |                                                |                2 |              4 |
+|  clock_400hz/CLK                                |                       |                                                |                1 |              6 |
+|  sys_clock_IBUF_BUFG                            | song_player1/number_0 | enabler1/SR[0]                                 |                5 |             20 |
+|  sys_clock_IBUF_BUFG                            | load_alarm_IBUF       | DC1/clock_1hz/SR[0]                            |                6 |             24 |
+|  sys_clock_IBUF_BUFG                            |                       | song_player1/counter[0]_i_1_n_0                |                5 |             40 |
+|  sys_clock_IBUF_BUFG                            |                       | song_player1/time1[0]_i_1_n_0                  |                8 |             64 |
+|  sys_clock_IBUF_BUFG                            |                       | DC1/clock_1hz/SR[0]                            |               12 |            112 |
++-------------------------------------------------+-----------------------+------------------------------------------------+------------------+----------------+
+
+

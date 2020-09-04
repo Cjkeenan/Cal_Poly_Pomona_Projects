@@ -1,0 +1,137 @@
+﻿using System;
+
+namespace TakeHomeMidterm
+{
+
+  public class Problem_4
+  {
+      public void Run()
+      {
+          Complex[] coef = new Complex[3];
+          Complex a = new Complex();
+          Complex b = new Complex();
+          Complex c = new Complex();
+          int deg;
+
+          //Pair 1
+          ComplexPolynomial p1 = new ComplexPolynomial();
+          ComplexPolynomial add1 = new ComplexPolynomial();
+          ComplexPolynomial mul1 = new ComplexPolynomial();
+
+          a.SetComplex(1, 1);
+          b.SetComplex(1, -1);
+          c.SetComplex(0, 1);
+          coef[0] = a;
+          coef[1] = b;
+          coef[2] = c;
+          deg = 2;
+          p1.SetPolynomial(coef, deg);
+
+          //calculate for pair 1
+          add1 = p1.CalculateAddition(p1);
+          mul1 = p1.CalculateProduct(p1);
+
+          //Pair 2
+          ComplexPolynomial p2a = new ComplexPolynomial();
+          ComplexPolynomial p2b = new ComplexPolynomial();
+          ComplexPolynomial add2 = new ComplexPolynomial();
+          ComplexPolynomial mul2 = new ComplexPolynomial();
+
+          a.SetComplex(1, 1);
+          b.SetComplex(1, -1);
+          c.SetComplex(0, 1);
+          coef[0] = a;
+          coef[1] = b;
+          coef[2] = c;
+          deg = 2;
+          p2a.SetPolynomial(coef, deg);
+
+          //Not this
+          a.SetComplex(1, 0);
+          b.SetComplex(1, 0);
+          c.SetComplex(1, 0);
+          coef[0] = a;
+          coef[1] = b;
+          coef[2] = c;
+          deg = 2;
+          p2b.SetPolynomial(coef, deg);
+          //But this
+          p2b = new ComplexPolynomial ( new Complex[] {
+              new Complex(1, 0),
+              new Complex(1, 0),
+              new Complex(1, 0),
+            }, 2);
+
+
+          //calculate for pair 2
+          add2 = p2a.CalculateAddition(p2b);
+          mul2 = p2a.CalculateProduct(p2b);
+
+          //Pair 3
+          ComplexPolynomial p3a = new ComplexPolynomial();
+          ComplexPolynomial p3b = new ComplexPolynomial();
+          ComplexPolynomial add3 = new ComplexPolynomial();
+          ComplexPolynomial mul3 = new ComplexPolynomial();
+          Complex d = new Complex();
+          Complex[] coef4 = new Complex[4];
+
+          a.SetComplex(1, 1);
+          b.SetComplex(1, -1);
+          c.SetComplex(0, 1);
+          d.SetComplex(0, 1);
+          coef4[0] = a;
+          coef4[1] = b;
+          coef4[2] = c;
+          coef4[3] = d;
+          deg = 3;
+          p3a.SetPolynomial(coef4, deg);
+
+          a.SetComplex(1, 0);
+          b.SetComplex(1, 0);
+          c.SetComplex(1, 0);
+          d.SetComplex(1, 0);
+          coef4[0] = a;
+          coef4[1] = b;
+          coef4[2] = c;
+          coef4[3] = d;
+          deg = 3;
+          p3b.SetPolynomial(coef4, deg);
+
+          //calculate for pair 3
+          add3 = p3a.CalculateAddition(p3b);
+          mul3 = p3a.CalculateProduct(p3b);
+
+          //Write to Console
+          Console.Write("\n\nPolynomials: ");
+          p1.Print();
+          Console.Write(" and ");
+          p1.Print();
+          Console.Write("\nMultiplication: ");
+          mul1.Print();
+          Console.Write("\nAddition: ");
+          add1.Print();
+          Console.WriteLine("");
+
+          Console.Write("\n\nPolynomials: ");
+          p2a.Print();
+          Console.Write(" and ");
+          p2b.Print();
+          Console.Write("\nMultiplication: ");
+          mul2.Print();
+          Console.Write("\nAddition: ");
+          add2.Print();
+          Console.WriteLine("");
+
+          Console.Write("\n\nPolynomials: ");
+          p3a.Print();
+          Console.Write(" and ");
+          p3b.Print();
+          Console.Write("\nMultiplication: ");
+          mul3.Print();
+          Console.Write("\nAddition: ");
+          add3.Print();
+          Console.WriteLine("");
+      }
+  }
+
+}
